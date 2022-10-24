@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'hello',
+    'hello', 'newyear',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -55,7 +55,7 @@ ROOT_URLCONF = "first.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [r"C:\Users\sures\OneDrive - West Chester University of PA\Summer 2022\first\hello\templates\hello"],
+        "DIRS": [r"C:\Users\sures\OneDrive - West Chester University of PA\Summer 2022\first\hello\templates\hello", r"C:\Users\sures\OneDrive - West Chester University of PA\Summer 2022\django\first\newyear\templates\newyear"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
