@@ -48,14 +48,30 @@ python manage.py startapp <app_name>
 *	Go into the web address and edit the link to contain /hello tag at the end 
 
 ## 7.	In case of `TemplateDoesNotExsit` at <app_name> error:
-* Go into views.py under the <project name> directory 
-* Then go into settings.py then find TEMPLATES[]
-*	Then do into DIRS:[] and add the path to the Template Dir like starting with r’<template_dir>’
+* Go into views.py under the <project_name> directory 
+* Then go into settings.py then find `TEMPLATES[]`
+*	Then do into `DIRS:[]`and add the path to the Template Dir starting with r’<template_dir>’
 
 ## 8.	When using sessions run:
 ```
 python manage.py migrate
 ``` 
+
+## 9.	CSS Style Sheet/ static webpage:
+* Create static directory within in the <app_name> directory then create a <app_name> directory inside the static directory
+* Edit the `index.htm` with under `head` tag:
+```
+<link rel="stylesheet" href="{% static '<app_name>/styles.css' %}">
+```  
+* Copy the memory addres of the static with the <app_name> directory
+* Go into settings.py under <project_name> directory find `TEMPLATES[]` then do into `DIRS:[]`and add the path to the Template Dir starting with r ’<static_dir>’
+
+
+
+
+
+
+
 
 
 
