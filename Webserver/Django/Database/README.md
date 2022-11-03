@@ -105,8 +105,23 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-
-
+## 9. Admin
+* To use built in applications that Django as preloaded
+```
+python manage.py createsuperuser
+Username (leave blank to use <'workspace'>): <Your_name>
+Email address: <email>
+Password: <makeup a password>
+Superuser created successfully.
+```
+* Django has created a super user account for this applicatiom, this lets you have access to the admin app to manipulate these preinstalled models.
+* Takes classes in models.py and add it to admin.py under the <app_name> directory
+    * Import the classes to admin.py adn edit the file:
+    ```
+    admin.site.register(<class_name>)
+    ```
+* Then run server
+* Go into the webpage and add the tag /admin to the link and login with the above login information
 
 
 
